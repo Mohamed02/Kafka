@@ -17,4 +17,7 @@ distributed system which acts as an integration layer between multiple applicati
 thus we can avoid building multipe integration between those.
 
 
-Topics 
+TOPICS, PARTITIONS and OFFSETS
+
+
+TOPICS:
