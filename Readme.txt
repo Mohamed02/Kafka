@@ -130,5 +130,32 @@ ZOOKEEPER:
     Kafka Wont work without a zookeeper . zookeeper work with odd no of servers.
 
 
+##############SNIPPETS##############
+
+INSTALLATION 
+ refer the below file for installation commands of kafka
+    LinkedInFiles/03_01/Downloading_Source_Code/Code/0-start-kafka/macosx/macosx-setup.sh
+
+STARTING KAFKA and ZOOKEEPER 
+LinkedInFiles/03_01/Downloading_Source_Code/Code/0-start-kafka/macosx/macosx-start-kafka.sh
+
+TOPICS CREATION DELETION etc
+LinkedInFiles/03_01/Downloading_Source_Code/Code/1-kafka-cli/0-kafka-topics.sh
+
+PRODUCER
+LinkedInFiles/03_01/Downloading_Source_Code/Code/1-kafka-cli/1-kafka-console-producer.sh
+
+CONSUMER
+LinkedInFiles/03_01/Downloading_Source_Code/Code/1-kafka-cli/2-kafka-console-consumer.sh
+
+IMPLEMENTING CONSUMER/PRODUCER Using Java
+    Refer kafka-beginners-course-master/kafka-basics
+
+IMPLEMENTING A TWITTER PRODUCER in Java
+    Here the tweets from teh twitter are retrieved through the twitter client and they are sent to the Kafka's Topic Partition
+    using Produced created through JAVA.
+
+    Refer kafka-beginners-course-master/kafka-producer-twitter
+
 
 
