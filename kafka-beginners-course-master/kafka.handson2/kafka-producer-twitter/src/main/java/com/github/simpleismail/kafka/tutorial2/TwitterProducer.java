@@ -33,7 +33,7 @@ public class TwitterProducer {
         //create a twitter client
         //loop to send tweets to kafka
 
-        BlockingQueue<String> msgQueue = new LinkedBlockingQueue<String>(100000);
+        BlockingQueue<String> msgQueue = new LinkedBlockingQueue<>(100000);
         Client client= createTwitterClient(msgQueue);
         client.connect();
           //create a kafka producer
@@ -75,13 +75,13 @@ public class TwitterProducer {
         properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         KafkaProducer<String,String> producer=new KafkaProducer<>(properties);
-       return  producer;
-    };
+       return producer;
+    }
 
-    String consumerKey="i8GYb9qlEtuorBM04UAcwLsEm";
-    String consumerSecret="b9h42Iy3BjRXk8GF3ycCAHiJM8hRJPmIobsBTWuoYzx6vmzkS8";
-    String token ="111910738-xvd7xxfa2watxdUDfRPKriv0fLI5EsDYJ6dMPC8F";
-    String secret="9OR2lczfty9MqjQXoV5c0CkXCwCAUwwtiWxFVyJ95IZbk";
+    String consumerKey="asdfasdf";
+    String consumerSecret="asdfasdfasdf";
+    String token ="asdfasdfasdf";
+    String secret="asdfasdfasdfasdfasdfasdf";
     public Client createTwitterClient(BlockingQueue msgQueue){
 /** Declare the host you want to connect to, the endpoint, and authentication (basic auth or oauth) */
         Hosts hosebirdHosts = new HttpHosts(Constants.STREAM_HOST);
